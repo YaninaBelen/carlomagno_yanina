@@ -74,6 +74,217 @@
     color: #F2FFE9;
 }
 
+header {
+    display: flex;
+    justify-content: center; 
+    padding: 30px 0px 40px 0px; 
+}
+
+.curriculum-nav {
+    max-width: 700px;
+    width: 50%;
+}
+
+.curriculum-nav-ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.curriculum-nav-ul li{
+    list-style-type: none;
+}
+
+.texto-nav a {
+    padding: 7px 15px;
+    border: solid 4px #1D4D55;
+    border-radius: 30px;
+}
+
+.curriculum-nav-ul a {
+    text-decoration: none;
+    color: #1D4D55;
+    font-family: Kavoon;
+}
+
+.texto-nav a:hover {
+    background-color: #FA7070;
+    color: #F2FFE9;
+}
+
+footer {
+    background-color: #557C55;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0px;
+    gap: 15px;
+}
+
+footer ul {
+    display: flex;
+    gap: 50px;
+}
+
+footer ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer ul li a, footer h5{
+    text-decoration: none;
+    color: #F2FFE9;
+    font-family: Piazzolla;
+    font-size: 0.8em;
+}
+
+.main-fondos{
+    background-image: url(img/fondo-02-02.png);
+    background-position: center top;
+    background-size: 100% auto;
+}
+
+.foto {
+    background-image: url(img/foto_perfil2.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 351px;
+    border: solid 4px #1D4D55;
+    border-radius: 30px;
+}
+
+.foto-nombre {
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.yanina-carlomagno h2, .yanina-carlomagno h1{
+    color: #1D4D55;
+    font-family: Kavoon;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.info-curriculum {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-curriculum p {
+    color: #1D4D55;
+    font-family: Piazzolla;
+    font-size: 1em;
+    font-weight: 400;
+    max-width: 550px;
+}
+
+.negrita {
+    font-weight: 700;
+}
+
+.Nombre-info {
+    width: 40%;
+    padding-left: 70px;
+    max-width: 600px;
+}
+
+.habilidades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.ingles-bloque {
+    width: 351px;
+}
+
+.habilidades-apps {
+    width: 40%;
+    padding-left: 70px;
+    max-width: 600px;
+    
+}
+
+.habilidades-apps h3{
+    color: #1D4D55;
+    font-family: Kavoon;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.iconos-apps ul {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    flex-wrap: wrap;
+    padding: 25px 0px 10px;
+}
+
+.habilidades-apps p {
+    color: #1D4D55;
+    font-family: Piazzolla;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.iconos-apps ul li {
+    list-style-type: none;
+}
+
+.ingles-bloque {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.ingles-bloque p {
+    color: #1D4D55;
+    font-family: Piazzolla;
+}
+
+.ingles {
+    color: #1D4D55;
+    font-family: Piazzolla;
+    font-size:2em;
+    font-weight: 700;
+
+}
+
+.experiencia-titulo {
+    padding-top: 60px;
+}
+
+.experiencia-titulo p {
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+.experiencia ul {
+    list-style-type: none;
+    padding-bottom: 70px;
+    max-width: 600px;
+}
+
+.experiencia ul h4 {
+    color: #1D4D55;
+    font-family: Piazzolla;
+    font-size: 1em;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+
+
+
 /* media*/
 
 @media (max-width: 900px)
@@ -100,6 +311,58 @@
     .botones-inicio a {
         width: 200px;
     }
+
+    .ingles-bloque{
+        width: 80%;
+    }
+    
+    .foto-nombre {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .foto {
+        height: 300px;
+        width: 251px;
+    }
+
+    .Nombre-info {
+        width: 80%;
+        padding: 30px 0px 0px 0px;
+    }
+
+    .info-curriculum {
+        padding-top: 15px;
+    }
+
+    .habilidades {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 42px;
+    }
+
+    .habilidades-apps {
+        width: 80%;
+        padding: 25px 0px 0px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    header {
+        padding: 0px;
+    }
+
+    .curriculum-nav-ul {
+        flex-direction: column-reverse;
+
+        gap: 30px;
+        padding-top: 50px;
+    }
+
 }
-
-

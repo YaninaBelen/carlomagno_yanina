@@ -3,10 +3,27 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 a {
     text-decoration: none;
 }
 
+.arriba {
+    position: fixed;
+    top: 85vh;
+    left: 90%;
+}
+
+.arriba img {
+    border-radius: 30px;
+    border: solid 4px #F2FFE9;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
 
 .index {
     background-color: #F2FFE9;
@@ -349,7 +366,7 @@ footer ul li a, footer h5{
 }
 
 
-.boton-identidades a {
+.boton-identidades a, .boton-ilustraciones a {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -360,7 +377,7 @@ footer ul li a, footer h5{
 
 
 .boton-identidades-div {
-    background-image: url(img/ilustraciones/curita-arreglado-01.jpg);
+    background-image: url(img/ilustraciones/buzo-verde.jpg);
     background-size: cover;
     width: 85%;
     height: 100px;
@@ -373,8 +390,19 @@ footer ul li a, footer h5{
     
 }
 
+.boton-ilustraciones-div {
+    background-image: url(img/ilustraciones/curita-arreglado-01.jpg);
+    background-size: cover;
+    width: 85%;
+    height: 100px;
+    border-radius: 30px;
+    border: solid 4px #1D4D55 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.botton-identidades-overlay h2 {
+.botton-identidades-overlay h2, .botton-ilustraciones-overlay h2 {
     color: #F2FFE9;
     text-align: center;
     font-family: Kavoon;
@@ -383,7 +411,7 @@ footer ul li a, footer h5{
 
 }
 
-.botton-identidades-overlay h3{
+.botton-identidades-overlay h3, .botton-ilustraciones-overlay h3{
     color: #F2FFE9;
     text-align: center;
     font-family: Piazzolla;
@@ -391,7 +419,7 @@ footer ul li a, footer h5{
     font-weight: 400;
 }
 
-.botton-identidades-overlay {
+.botton-identidades-overlay, .botton-ilustraciones-overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -404,8 +432,7 @@ footer ul li a, footer h5{
     border: solid 4px #1D4D55 ;
 }
 
-.boton-identidades a:hover {
-
+.boton-identidades a:hover, .boton-ilustraciones a:hover {
     transform: scale(105%);
 }
 
@@ -459,6 +486,104 @@ footer ul li a, footer h5{
 .galeria a:hover {
     transform: scale(103%)
 }
+
+.galeria-identidades {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(404px,404px));
+    justify-content: center;
+    align-content: center;
+    grid-gap: 15px;
+}
+
+.galeria-identidades iframe {
+    border: solid 4px #1D4D55;
+    border-radius: 30px;
+}
+
+
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px 120px;
+
+}
+
+form h2 {
+    color: #1D4D55;
+    font-family: Kavoon;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.formulario form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 440px;
+    flex-wrap: wrap;
+}
+
+.nombre_apellido {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 700px;
+}
+
+.label_nombre, .label_apellido, .label_mail, .label_telefono, .label_descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #1D4D55;
+    font-family: Piazzolla;
+    font-size: 1em;
+    font-weight: 700;
+
+}
+
+.labels-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    background-color: #F2FFE9;
+    border: solid 3px #557C55;
+    border-radius: 10px;
+    height: 25px;
+    color: #1D4D55;
+    font-family: Piazzolla;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+textarea {
+    height: 40px;
+}
+
+
+.enviar {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #A6CF98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    height: 35px;
+}
+
+.enviar:hover {
+    background-color: #FA7070;
+    color: #1D4D55;
+}
+
 
 /* media*/
 
@@ -593,13 +718,44 @@ footer ul li a, footer h5{
         height: 360px;
     }
 
-    .galeria {
+    .galeria, .galeria-identidades {
         grid-template-columns: repeat(auto-fit, minmax(254px,254px));
         grid-gap: 10px;
     
     }
 
-    .boton-identidades {
+    .boton-identidades, .boton-ilustraciones {
         padding-top: 70px;
+    }
+
+    .galeria-identidades iframe {
+        width: 254px;
+        height: 216px;
+    }
+
+    .arriba {
+        position: fixed;
+        top: 85vh;
+        left: 80%;
+    }
+    
+    .arriba img {
+        width: 35px;
+        height: 35px;
+    
+    }
+
+    .formulario {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .formulario form {
+        width: 85%;
+    }
+
+    .nombre_apellido {
+        flex-direction: column;
     }
 }

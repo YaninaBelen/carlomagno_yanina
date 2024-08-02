@@ -18,14 +18,14 @@
         <nav class="curriculum-nav" >
             <ul class="curriculum-nav-ul">
                 <li class="texto-nav"><a href="sobremi.html">Sobre mí</a></li>
-                <li><a href="index.html"><img src="img/logos/logo verde-02.svg" alt="monograma marca" height="53px" width="61px"></a></li>
+                <li class="ir-index"><a href="index.html"><img src="img/logos/logo verde-02.svg" alt="monograma marca" height="53px" width="61px"></a></li>
                 <li class="texto-nav"><a href="proyectos.html">Proyectos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="formulario">
-                <form action="mailto:yaninabelen382@gmail.com" method="post" target="_blank" enctype="text/plain">
+                <form id="contact-form" method="post" target="_blank" enctype="text/plain">
                     <h2>Trabajemos juntos ;)</h2>
                     <div class="labels-form">
                         <div class="nombre_apellido">
@@ -58,6 +58,26 @@
                         <div class="enviar_div">
                             <input class="enviar" type="submit" value="Enviar" formenctype="text/plain">
                         </div>
+                        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                            <script>
+                                // Inicializa EmailJS con tu User ID
+                                (function(){
+                                emailjs.init("F76BObdmECDM6f_VQ");  // Reemplaza "YOUR_USER_ID" con tu ID de usuario de EmailJS
+                                })();
+
+                                // Maneja el envío del formulario
+                                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                event.preventDefault();  // Previene el comportamiento por defecto del formulario
+
+                                // Envía el formulario a través de EmailJS
+                                emailjs.sendForm('service_m6hiswk', 'template_cda9798', this)
+                                    .then(function() {
+                                    alert('Correo enviado exitosamente!');
+                                    }, function(error) {
+                                    alert('Hubo un error al enviar el correo: ' + JSON.stringify(error));
+                                    });
+                                });
+                            </script>
                     </div>
                 </form>
             </section>

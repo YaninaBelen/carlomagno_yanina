@@ -168,6 +168,19 @@ footer ul li a, footer h5{
     background-size: 100% auto;
 }
 
+.ir-index {
+    width: 60px;
+    
+}
+
+.ir-index a img {
+    transition: transform 0.2s ease;
+}
+
+.ir-index a img:hover{
+    transform: scale(110%);
+}
+
 .foto {
     background-image: url(img/foto_perfil2.jpg);
     background-size: cover;

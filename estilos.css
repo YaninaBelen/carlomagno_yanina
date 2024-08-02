@@ -383,8 +383,17 @@ footer ul li a, footer h5{
 
 }
 
+.botton-identidades-overlay h3{
+    color: #F2FFE9;
+    text-align: center;
+    font-family: Piazzolla;
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
 .botton-identidades-overlay {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 85%;
@@ -397,13 +406,58 @@ footer ul li a, footer h5{
 
 .boton-identidades a:hover {
 
-    transform: scale(110%);
+    transform: scale(105%);
+}
+
+.ilustraciones-galeria {
+    padding: 50px 0px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ilustraciones-galeria h2 {
+    width: 85%;
+    color: #1D4D55;
+    font-family: Kavoon;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+.ilustraciones-galeria h3 {
+    width: 85%;
+    color: #1D4D55;
+    font-family: Piazzolla;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.container-galeria {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 0px;
+   
 }
 
 .galeria {
+    width: 85%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(339px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px,360px));
+    justify-content: center;
+    align-content: center;
     grid-gap: 10px;
+
+}
+
+.galeria a {
+    transition: transform 0.3s ease;
+}
+
+
+.galeria a:hover {
+    transform: scale(103%)
 }
 
 /* media*/
@@ -532,5 +586,20 @@ footer ul li a, footer h5{
     .identidades h2, .ilustraciones h2 {
         font-size: 1em;
         width: 80%;
+    }
+
+    .galeria a img {
+        width: 254px;
+        height: 360px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(254px,254px));
+        grid-gap: 10px;
+    
+    }
+
+    .boton-identidades {
+        padding-top: 70px;
     }
 }

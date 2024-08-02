@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
 
 
 .index {
@@ -282,8 +285,126 @@ footer ul li a, footer h5{
     padding-top: 10px;
 }
 
+.proyectos {
+    padding: 30px 0px 70px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.ilustraciones {
+    background-image: url(img/ilustraciones/curita-arreglado-01.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 430px;
+    height: 569px;
+    border-radius: 30px;
+    border: 4px solid #1D4D55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.identidades {
+    background-image: url(img/ilustraciones/buzo-verde.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 430px;
+    height: 569px;
+    border-radius: 30px;
+    border: 4px solid #1D4D55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.identidades h2, .ilustraciones h2 {
+    width: 60%;
+    text-align: center;
+    color: #F2FFE9;
+    font-family: Kavoon;
+    font-weight: 400;
+}
+
+.ilustraciones-overlay, .identidades-overlay {
+    width: 430px;
+    height: 569px;
+    position: absolute;
+    border-radius: 30px;
+    border: 4px solid #1D4D55;
+    background-color:rgba(0, 0, 0, 0.8);
+    top: 155px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.ilustraciones-overlay:hover, .identidades-overlay:hover {
+    opacity: 1;
+}
 
 
+.boton-identidades a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    
+}
+
+
+
+.boton-identidades-div {
+    background-image: url(img/ilustraciones/curita-arreglado-01.jpg);
+    background-size: cover;
+    width: 85%;
+    height: 100px;
+    border-radius: 30px;
+    border: solid 4px #1D4D55 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.botton-identidades-overlay h2 {
+    color: #F2FFE9;
+    text-align: center;
+    font-family: Kavoon;
+    font-size: 1em;
+    font-weight: 400;
+
+}
+
+.botton-identidades-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 100px;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    border: solid 4px #1D4D55 ;
+}
+
+.boton-identidades a:hover {
+
+    transform: scale(110%);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(339px,1fr));
+    grid-gap: 10px;
+}
 
 /* media*/
 
@@ -365,4 +486,51 @@ footer ul li a, footer h5{
         padding-top: 50px;
     }
 
+    .proyectos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 70px 0px;
+    }
+
+    .ilustraciones, .identidades {
+        width: 230px;
+        height: 129px;
+        border: 0px;
+    }
+
+    .ilustraciones-overlay {
+        width: 230px;
+        height: 129px;
+        position: relative;
+        border-radius: 30px;
+        border: 4px solid #1D4D55;
+        background-color:rgba(0, 0, 0, 0.5);
+        top: 0px;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+    }
+
+    .identidades-overlay {
+        width: 230px;
+        height: 129px;
+        position: relative;
+        border-radius: 30px;
+        border: 4px solid #1D4D55;
+        background-color:rgba(0, 0, 0, 0.5);
+        top: 0px;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+    }
+
+    .identidades h2, .ilustraciones h2 {
+        font-size: 1em;
+        width: 80%;
+    }
 }

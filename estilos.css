@@ -238,6 +238,13 @@ footer ul li a, footer h5{
 
 .ingles-bloque {
     width: 351px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.argentina, .ingles-entiendo {
+    text-align: end;
 }
 
 .habilidades-apps {

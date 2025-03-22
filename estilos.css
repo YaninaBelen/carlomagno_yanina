@@ -229,18 +229,23 @@ footer ul li a, footer h5{
     max-width: 600px;
 }
 
-.habilidades {
+.cuerpo_sobremi {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 80px;
 }
 
-.ingles-bloque {
+.cuerpo_izquierdo {
     width: 351px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.argentina {
+    padding-top: 15px;
 }
 
 .argentina, .ingles-entiendo {
@@ -280,13 +285,9 @@ footer ul li a, footer h5{
     list-style-type: none;
 }
 
-.ingles-bloque {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
+    
 
-.ingles-bloque p {
+.cuerpo_izquierdo p {
     color: #1D4D55;
     font-family: Piazzolla;
 }
@@ -298,6 +299,31 @@ footer ul li a, footer h5{
     font-weight: 700;
 
 }
+
+.certificados {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.certificados h3 {
+    color: #1D4D55;
+    font-family: Kavoon;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+
+.certificados ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 10px;
+    list-style-type: none;
+    width: 80%;
+}
+
 
 .experiencia-titulo {
     padding-top: 60px;
@@ -314,11 +340,11 @@ footer ul li a, footer h5{
     max-width: 600px;
 }
 
-.experiencia ul h4 {
+.experiencia ul h4, .certificados ul li h4 {
     color: #1D4D55;
     font-family: Piazzolla;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 800;
     padding-top: 10px;
 }
 
@@ -664,11 +690,35 @@ textarea {
         padding-top: 15px;
     }
 
-    .habilidades {
+    .cuerpo_sobremi {
         flex-direction: column;
         align-items: center;
         margin-top: 42px;
+    
     }
+
+    .cuerpo_izquierdo {
+        flex-direction: column;
+        width: fit-content;
+        padding: 0px 30px 0px 30px;
+        
+    }
+
+    .certificados{
+        align-items: flex-start;
+        
+    }
+
+
+    .certificados ul li {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .certificados ul {
+        align-items: flex-start;
+    }
+
 
     .habilidades-apps {
         width: 80%;

@@ -360,7 +360,7 @@ h5 {
     padding: 30px 0px 70px;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     width: 100%;
 }
 
@@ -368,8 +368,8 @@ h5 {
     background-image: url(img/ilustraciones/curita-arreglado-01.jpg);
     background-size: cover;
     background-position: center;
-    width: 430px;
-    height: 569px;
+    width: 344px;
+    height: 455px;
     border-radius: 30px;
     border: 4px solid #1D4D55;
     display: flex;
@@ -382,8 +382,20 @@ h5 {
     background-image: url(img/ilustraciones/buzo-verde.jpg);
     background-size: cover;
     background-position: center;
-    width: 430px;
-    height: 569px;
+    width: 344px;
+    height: 455px;
+    border-radius: 30px;
+    border: 4px solid #1D4D55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialmedia {
+    background-image: url(img/socialmedia/superauto-1.png);
+    background-size: cover;
+    background-position: center;
+    width: 344px;
+    height: 455px;
     border-radius: 30px;
     border: 4px solid #1D4D55;
     display: flex;
@@ -391,7 +403,7 @@ h5 {
     justify-content: center;
 }
 
-.identidades h2, .ilustraciones h2 {
+.identidades h2, .ilustraciones h2, .socialmedia h2 {
     width: 60%;
     text-align: center;
     color: #F2FFE9;
@@ -399,9 +411,9 @@ h5 {
     font-weight: 400;
 }
 
-.ilustraciones-overlay, .identidades-overlay {
-    width: 430px;
-    height: 569px;
+.ilustraciones-overlay, .identidades-overlay, .socialmedia-overlay {
+    width: 344px;
+    height: 455px;
     position: absolute;
     border-radius: 30px;
     border: 4px solid #1D4D55;
@@ -411,24 +423,41 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+    opacity: 0.7;
     transition: 0.3s;
 }
 
-.ilustraciones-overlay:hover, .identidades-overlay:hover {
+.ilustraciones-overlay:hover, .identidades-overlay:hover, .socialmedia-overlay:hover {
     opacity: 1;
 }
 
 
-.boton-identidades a, .boton-ilustraciones a {
+.boton-identidades a, .boton-ilustraciones a, .boton-socialmedia a {
     width: 100%;
     display: flex;
     justify-content: center;
     transition: transform 0.3s ease;
-    
+   
 }
 
+.boton-identidades, .boton-ilustraciones, .boton-socialmedia {
+    padding: 5px 0px;
+}
 
+.boton-socialmedial-div {
+    background-image: url(img/socialmedia/superauto-1.png);
+    background-size: cover;
+    background-position: center;
+    width: 85%;
+    height: 100px;
+    border-radius: 30px;
+    border: solid 4px #1D4D55 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
 
 .boton-identidades-div {
     background-image: url(img/ilustraciones/buzo-verde.jpg);
@@ -456,7 +485,7 @@ h5 {
     align-items: center;
 }
 
-.botton-identidades-overlay h2, .botton-ilustraciones-overlay h2 {
+.botton-identidades-overlay h2, .botton-ilustraciones-overlay h2, .botton-socialmedia-overlay h2 {
     color: #F2FFE9;
     text-align: center;
     font-family: Kavoon;
@@ -465,7 +494,7 @@ h5 {
 
 }
 
-.botton-identidades-overlay h3, .botton-ilustraciones-overlay h3{
+.botton-identidades-overlay h3, .botton-ilustraciones-overlay h3, .botton-socialmedia-overlay h3 {
     color: #F2FFE9;
     text-align: center;
     font-family: Piazzolla;
@@ -473,7 +502,7 @@ h5 {
     font-weight: 400;
 }
 
-.botton-identidades-overlay, .botton-ilustraciones-overlay {
+.botton-identidades-overlay, .botton-ilustraciones-overlay, .botton-socialmedia-overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -486,18 +515,18 @@ h5 {
     border: solid 4px #1D4D55 ;
 }
 
-.boton-identidades a:hover, .boton-ilustraciones a:hover {
+.boton-identidades a:hover, .boton-ilustraciones a:hover, .boton-socialmedia a:hover {
     transform: scale(105%);
 }
 
-.ilustraciones-galeria {
+.ilustraciones-galeria, .socialmedia-galeria {
     padding: 50px 0px; 
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.ilustraciones-galeria h2 {
+.ilustraciones-galeria h2, .socialmedia-galeria h2 {
     width: 85%;
     color: #1D4D55;
     font-family: Kavoon;
@@ -505,7 +534,7 @@ h5 {
     font-weight: 400;
 }
 
-.ilustraciones-galeria h3 {
+.ilustraciones-galeria h3, .socialmedia-galeria h3 {
     width: 85%;
     color: #1D4D55;
     font-family: Piazzolla;
@@ -513,7 +542,7 @@ h5 {
     font-weight: 400;
 }
 
-.container-galeria {
+.container-galeria, .container-galeria-socialmedia {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -532,12 +561,28 @@ h5 {
 
 }
 
-.galeria a {
+.galeria-socialmedia, .galeria-socialmedia-historias
+{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px,330px));
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+
+}
+
+.historias img {
+    border: solid 4px #1D4D55;
+    border-radius: 30px;
+}
+
+.galeria a, .galeria-socialmedia a, .galeria-socialmedia-historias {
     transition: transform 0.3s ease;
 }
 
 
-.galeria a:hover {
+.galeria a:hover, .galeria-socialmedia a:hover, .galeria-socialmedia-historias a:hover {
     transform: scale(103%)
 }
 
@@ -750,7 +795,7 @@ textarea {
         padding: 70px 0px;
     }
 
-    .ilustraciones, .identidades {
+    .ilustraciones, .identidades, .socialmedia {
         width: 230px;
         height: 129px;
         border: 0px;
@@ -786,7 +831,22 @@ textarea {
         opacity: 1;
     }
 
-    .identidades h2, .ilustraciones h2 {
+    .socialmedia-overlay {
+        width: 230px;
+        height: 129px;
+        position: relative;
+        border-radius: 30px;
+        border: 4px solid #1D4D55;
+        background-color:rgba(0, 0, 0, 0.5);
+        top: 0px;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+    }
+
+    .identidades h2, .ilustraciones h2, .socialmedia h2{
         font-size: 1em;
         width: 80%;
     }
@@ -796,7 +856,18 @@ textarea {
         height: 360px;
     }
 
-    .galeria, .galeria-identidades {
+    .galeria-socialmedia a img {
+         width: 254px;
+        height: 318px;
+    }
+
+    .galeria-socialmedia-historias a img {
+         width: 254px;
+        height: 452px;
+    }
+    
+
+    .galeria, .galeria-identidades, .galeria-socialmedia, .galeria-socialmedia-historias {
         grid-template-columns: repeat(auto-fit, minmax(254px,254px));
         grid-gap: 10px;
     

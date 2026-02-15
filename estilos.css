@@ -542,6 +542,10 @@ h5 {
     font-weight: 400;
 }
 
+.posteos_behance_div {
+    padding-top: 40px;
+}
+
 .container-galeria, .container-galeria-socialmedia {
     width: 100%;
     display: flex;
@@ -856,9 +860,13 @@ textarea {
         height: 360px;
     }
 
-    .galeria-socialmedia a img {
+    .galeria-socialmedia a img, .posteos_behance_div {
          width: 254px;
         height: 318px;
+    }
+
+    .behance_posteos {
+        width:254px ;
     }
 
     .galeria-socialmedia-historias a img {
